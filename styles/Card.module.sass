@@ -1,0 +1,27 @@
+.card
+  //width: 100%
+  border-radius: 5px
+  height: 230px
+  background: #fff
+  overflow: hidden
+  position: relative
+  &:hover &__overlay
+    bottom: 0
+  &__overlay
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    bottom: -100%
+    left: 0
+    background: rgba(0, 0, 0, .7)
+    transition: .5s
+
+  &__text
+    font-size: 24px
+  &__preview
+    width: 100%
+    height: 100%
+    object-fit: cover
