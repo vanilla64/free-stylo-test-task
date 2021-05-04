@@ -5,6 +5,13 @@
   background: #fff
   overflow: hidden
   position: relative
+  transition: .5s
+  @media screen and (max-width: 1024px)
+    height: 180px
+  @media screen and (max-width: 1024px)
+    height: 160px
+  &:hover
+    box-shadow: rgba(8, 29, 45, 0.6) 0 0 20px
   &:hover &__overlay
     bottom: 0
   &__overlay
@@ -17,11 +24,35 @@
     bottom: -100%
     left: 0
     background: rgba(0, 0, 0, .7)
-    transition: .5s
+    transition: .5s ease-out
 
-  &__text
-    font-size: 24px
   &__preview
     width: 100%
     height: 100%
     object-fit: cover
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__link
+    color: #ffffff
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    margin: 0
+    width: 95%
+    height: 100%
+    font-size: 14px
+    text-decoration: none
+  &__saveBtn
+    padding: 4px 6px
+    position: absolute
+    bottom: 14px
+    right: 14px
+    //z-index: 5
+    cursor: pointer
+    background: gray
+    transition: .2s
+    &:hover
+      background: #EF483E

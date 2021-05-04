@@ -4,7 +4,9 @@ function Cards({ children }) {
   return (
     <section className={styles.cards}>
       <ul className={styles.cards__list}>
-        { children }
+        <>
+          { children }
+        </>
       </ul>
     </section>
   );
